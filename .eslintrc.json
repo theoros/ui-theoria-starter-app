@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "angular": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "key-spacing": ["error", { "afterColon": true, "beforeColon": false }],
+    "lines-around-comment": ["error", { "beforeBlockComment": true, "beforeLineComment": true }],
+    "no-console": "off",
+    "quotes": ["error", "single"],
+    "space-before-blocks": ["error", { "classes": "always", "functions": "always", "keywords": "always" }],
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": ["error", "always"]
+  }
+}

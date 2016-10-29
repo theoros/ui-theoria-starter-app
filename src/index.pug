@@ -1,0 +1,38 @@
+doctype html
+html( lang='en' ng-app='ui-theoria' )
+  head
+    meta( charset='UTF-8' )
+    meta( name='viewport' content='width=device-width, initial-scale=1' )
+    title UI Theoria — UI Engineering with Angular and D3
+
+    // Dependencies
+    link( rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' )
+    link( rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' )
+    link( rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css' )
+
+    // App styles
+    link( rel='stylesheet' href='styles.css' )
+
+  body( ng-cloak ng-controller='AppController as vm' ng-strict-di )
+    md-content.md-padding
+      md-card
+        md-card-header
+          md-card-avatar
+            md-icon widgets
+          md-card-header-text
+            span.md-headline UI Theoria
+            span.md-subhead {{ vm.name }} [{{ vm.version }}]
+        md-card-content
+          h2.md-title Welcome!
+          p This application starter-kit uses Pug, Sass, gulp, Babel, Rollup, ESLint, Browsersync and Yarn.
+
+    // Dependencies
+    script( src='https://d3js.org/d3.v4.min.js' )
+    script( src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js' )
+    script( src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js' )
+    script( src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js' )
+    script( src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js' )
+    script( src='https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js' )
+
+    // App scripts
+    script( src='scripts.js' )
